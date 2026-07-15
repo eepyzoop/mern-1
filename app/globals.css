@@ -24,26 +24,12 @@ a{color:inherit;text-decoration:none}
   100%{transform:translate(-50px,60px) scale(.95)}
 }
 
-/* ---- floating side rail nav (desktop) ---- */
-.rail{position:fixed;right:28px;top:50%;transform:translateY(-50%);z-index:60;
-  display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,.75);backdrop-filter:blur(14px);
-  border:1px solid var(--line);border-radius:999px;padding:10px 8px;box-shadow:0 14px 34px rgba(75,21,40,.10)}
-.rail a{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;
-  color:var(--muted);font-size:18px;position:relative;transition:background .25s,color .25s,transform .2s}
-.rail a:hover{background:var(--pink-soft);color:var(--pink-deep);transform:scale(1.06)}
-.rail a.active{background:var(--ink);color:#fff}
-.rail a .tip{position:absolute;right:58px;top:50%;transform:translateY(-50%);white-space:nowrap;
-  font-family:var(--font-jetbrains-mono),monospace;font-size:11.5px;letter-spacing:.06em;color:var(--ink);
-  background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;
-  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;box-shadow:0 8px 20px rgba(75,21,40,.10)}
-.rail a:hover .tip{opacity:1;transform:translateY(-50%) translateX(-4px)}
-
-/* slim top bar: logo only on desktop, full nav on mobile */
+/* top bar: minimalist text nav */
 .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(253,251,250,.75);border-bottom:1px solid var(--line)}
 .topbar-inner{max-width:1000px;margin:0 auto;padding:15px 24px;display:flex;justify-content:space-between;align-items:center}
 .logo{font-family:var(--font-fraunces),serif;font-size:20px;color:var(--ink)}
 .logo em{font-style:normal;color:var(--pink-deep)}
-.top-links{display:none;gap:16px;font-size:13.5px;color:var(--muted)}
+.top-links{display:flex;gap:16px;font-size:13.5px;color:var(--muted)}
 .top-links a.active{color:var(--ink);border-bottom:2px solid var(--pink);padding-bottom:2px}
 .page-label{font-family:var(--font-jetbrains-mono),monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 
@@ -193,8 +179,6 @@ footer a{color:var(--pink-deep);font-weight:500}
   html{scroll-behavior:auto}
 }
 @media (max-width:900px){
-  .rail{display:none}
-  .top-links{display:flex}
   .about-grid,.proj-grid,.teasers,.contact-grid{grid-template-columns:1fr}
   section{padding:60px 0}
 }

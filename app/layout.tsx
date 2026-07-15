@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Sky from "@/components/Sky";
-import Rail from "@/components/Rail";
 import TopBar from "@/components/TopBar";
 import ScrollReveal from "@/components/ScrollReveal";
 import { SITE_URL } from "@/lib/constants";
@@ -61,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${fraunces.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
       <body>
         <Sky />
-        <Rail />
         <TopBar />
         {children}
         <ScrollReveal />
