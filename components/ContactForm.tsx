@@ -87,7 +87,7 @@ export default function ContactForm() {
         {submitting ? "Sending…" : "Send message →"}
       </button>
       {submitError && <p className="form-note" style={{ color: "#E24B4A" }}>{submitError}</p>}
-      <p className="form-note">Your message goes straight to Izma; she&rsquo;ll reply by email.</p>
+      <p className="form-note">Your message goes straight to me; I&rsquo;ll reply by email.</p>
     </form>
   );
 }

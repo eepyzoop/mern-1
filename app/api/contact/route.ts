@@ -11,7 +11,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Name, email, and message are all required." }, { status: 400 });
   }
 
-  await prisma.contactMessage.create({ data: { name, email, message } });
+  try {
+    await prisma.contactMessage.create({ data: { name, email, message } });
+  } catch (err) {
+    console.error("Failed to save contact message:", err);
+    return NextResponse.json({ error: "Could not save message." }, { status: 500 });
+  }
 
   return NextResponse.json({ ok: true });
 }
