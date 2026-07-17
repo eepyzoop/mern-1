@@ -25,3 +25,11 @@ model Profile {
   role        String   @default("Admin")
   createdAt   DateTime @default(now())
 }
+
+model LoginAttempt {
+  id            String    @id @default(cuid())
+  ipAddress     String    @unique
+  attempts      Int       @default(0)
+  lastAttemptAt DateTime  @default(now())
+  blockedUntil  DateTime?
+}
