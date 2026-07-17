@@ -166,7 +166,32 @@ export default function ProjectsPage() {
                 </a>
               </div>
             </article>
+
+            <article className="proj p-blue reveal in">
+              <div className="proj-top">
+                <h3>AI × Healthcare Agent</h3>
+                <span className="proj-badge badge-blue">IN PROGRESS</span>
+              </div>
+              <p className="proj-hook">
+                An AI agent living at the intersection of AI and healthcare: pulls public health
+                data and turns it into a weekly report to support decision-making.
+              </p>
+              <ul>
+                <li>Ingests public health datasets and synthesises them on a recurring schedule</li>
+                <li>Exploring agentic workflows for automated weekly analysis and reporting</li>
+              </ul>
+              <div className="pills">
+                <span className="pill">AI Agents</span>
+                <span className="pill">Healthcare</span>
+                <span className="pill">Python</span>
+              </div>
+            </article>
           </div>
+
+          <p className="section-lead" style={{ marginTop: 34 }}>
+            Also tinkering with a handful of other AI/ML projects behind the scenes; more to share
+            soon.
+          </p>
         </section>
 
         <ContactBox

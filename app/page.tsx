@@ -37,7 +37,7 @@ export default function HomePage() {
         <section className="hero">
           <p className="hero-hello">hi, i&apos;m</p>
           <h1>
-            Izma Qamar-
+            Izma Qamar,
             <br />
             <span className="accent">turning curiosity into commits.</span>
           </h1>
@@ -138,6 +138,12 @@ export default function HomePage() {
               <p>Shipping features on a MERN stack product.</p>
             </div>
             <div className="t-item">
+              <span className="t-when">JUL 2026 — PRESENT</span>
+              <h3>Web Developer</h3>
+              <p className="t-org">Niyyat-e-Khidmat</p>
+              <p>Building the website for this welfare NGO from the ground up.</p>
+            </div>
+            <div className="t-item">
               <span className="t-when">JUN 2026 — PRESENT</span>
               <h3>Content Creator, Gen-AI</h3>
               <p className="t-org">PakLaunch</p>
@@ -159,7 +165,7 @@ export default function HomePage() {
               <span className="t-when">2026</span>
               <h3>AI Bootcamp</h3>
               <p className="t-org">Artificizen</p>
-              <p>Deepening applied AI/ML skills alongside internship work and personal projects.</p>
+              <p>Deepening applied AI/ML skills and applying them directly to personal projects.</p>
             </div>
           </div>
         </section>
