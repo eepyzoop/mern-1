@@ -1,4 +1,4 @@
-# Izma Qamar — Portfolio
+# Portfolio- built as part of MERN stack internship at DaFi Labs
 
 Personal portfolio site built with Next.js, showcasing projects, skills, and a working contact
 pipeline with an authenticated admin dashboard behind it.
@@ -61,7 +61,3 @@ npm run seed:admin
 | `npm run lint`         | Lint the codebase                      |
 | `npm run seed:admin`   | Create/verify the admin login          |
 
-## Author
-
-**Izma Qamar** — [LinkedIn](https://www.linkedin.com/in/izma-qamar-2b04b3379/) ·
-[GitHub](https://github.com/eepyzoop)
