@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type Page = "home" | "projects" | "tools" | "contact";
+type Page = "home" | "projects" | "tools" | "contact" | "none";
 
 const pages: { key: Page; href: string; label: string }[] = [
   { key: "home", href: "/", label: "Home" },

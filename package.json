@@ -2,15 +2,19 @@
   "name": "izma-portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "seed:admin": "node --env-file=.env scripts/seed-admin.ts"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",
+    "@supabase/ssr": "^0.12.3",
+    "@supabase/supabase-js": "^2.110.7",
     "next": "^16.2.10",
     "prisma": "6.19.3",
     "react": "^19.2.7",

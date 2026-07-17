@@ -13,5 +13,15 @@ model ContactMessage {
   name      String
   email     String
   message   String
+  status    String   @default("Pending")
   createdAt DateTime @default(now())
+}
+
+model Profile {
+  id          String   @id @default(cuid())
+  authUserId  String   @unique
+  name        String
+  email       String
+  role        String   @default("Admin")
+  createdAt   DateTime @default(now())
 }

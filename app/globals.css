@@ -168,6 +168,27 @@ textarea{min-height:150px;resize:vertical}
 footer{border-top:1px solid var(--line);padding:26px 24px;text-align:center;font-size:13.5px;color:var(--muted)}
 footer a{color:var(--pink-deep);font-weight:500}
 
+/* admin */
+.admin-shell{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start}
+.admin-sidebar{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:sticky;top:80px}
+.admin-nav{display:flex;flex-direction:column;gap:4px;margin-bottom:18px}
+.admin-nav a{font-size:14.5px;padding:10px 14px;border-radius:12px;color:var(--body);transition:background .2s,color .2s}
+.admin-nav a:hover{background:var(--pink-soft);color:var(--pink-deep)}
+.admin-nav a.active{background:var(--pink-soft);color:var(--pink-deep);font-weight:500}
+.admin-logout{width:100%;text-align:left;background:none;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;color:var(--muted);cursor:pointer;font-family:inherit;transition:border-color .2s,color .2s}
+.admin-logout:hover{border-color:var(--pink);color:var(--pink-deep)}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin-bottom:36px}
+.stat-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 20px 40px rgba(75,21,40,.05)}
+.stat-card b{display:block;font-family:var(--font-fraunces),serif;font-size:32px;color:var(--ink);font-weight:500}
+.stat-card span{font-size:13px;color:var(--muted)}
+.table-wrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 40px rgba(75,21,40,.05)}
+.admin-table{width:100%;border-collapse:collapse;font-size:14px}
+.admin-table th{text-align:left;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:14px 18px;border-bottom:1px solid var(--line)}
+.admin-table td{padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+.admin-table tr:last-child td{border-bottom:none}
+.admin-table td.msg{max-width:280px;color:var(--body)}
+.status-select{font-family:inherit;font-size:13px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
