@@ -12,6 +12,13 @@ h1,h2,h3{font-family:var(--font-fraunces),serif;color:var(--ink);font-weight:500
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--pink);color:var(--ink)}
 
+/* scrollbar */
+html{scrollbar-width:thin;scrollbar-color:var(--pink) transparent}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--pink);border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+
 /* animated pastel background */
 .sky{position:fixed;inset:0;z-index:-1;overflow:hidden;background:var(--bg)}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;animation:drift 26s ease-in-out infinite alternate}
